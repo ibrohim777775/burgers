@@ -1,0 +1,208 @@
+// font-family: 'Martel', serif;
+// font-family: 'Rubik', sans-serif;
+body{
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+a{
+    text-decoration: none;
+}
+
+.header{
+    margin-top: 49px;
+    margin-bottom: 56px;
+}
+.navigation_top{
+    display: flex;
+    margin-left: 5%;
+    align-items: center;
+    .logo{
+        a{
+            font-family: 'Martel', serif;
+            letter-spacing: -1.02px;
+            color: #0e1d2b;
+            font-size: 36px;
+            span{
+                color: #ffa326;
+                font-weight: 700;                
+            }
+        }
+    }
+    .nav_links{
+        width: 42%;
+        margin-left: 20%;
+        ul{
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            align-content: center;
+
+            li{
+                list-style: none;
+                display: flex;
+                padding: 0 10px;
+
+                a{
+                    font-size: 26px;
+                    letter-spacing: -0.16px;
+                    color: #0e1d2b;
+                    
+                }
+                &:hover{
+                        font-weight: bold;
+                        border-bottom: 3px solid #ffa326;
+
+                }
+            }
+        }
+    }
+}
+.nav_active{
+    font-weight: 700;
+    border-bottom: 3px solid #ffa326;
+}
+.two{
+    display: flex;
+    width: 100%;
+    h3{
+        font-family: 'Rubik', sans-serif;
+        font-size: 65px;
+        font-weight: 500;
+        line-height: 60px;
+        margin-bottom: 25px;
+    }
+    p{
+        font-family: 'Martel', serif;
+        font-size: 14px;
+        font-weight: 400;
+    }
+    .create_burgers{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 50%;
+        height: 400px;
+        padding-left: 6%;
+        background-color: #0c1d2b;
+        position: relative;
+        &::before{
+            content: " ";
+            background-image: url(../images/tomato.jpg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            opacity: .11;
+        }
+        h3{
+            color: #ffa326;;
+        }
+        p{
+            color: #fff;
+        }
+    }
+    .delicious{
+        width: 50%;
+        height: 400px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding-left: 6%;
+        background-color: #fda935;
+        position: relative;
+        &::before{
+            content: " ";
+            background-image: url(../images/dilicuos.jpg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            opacity: .11;
+        }
+        h3{
+            color: #fff;
+        }
+        p{
+            color: #0d1e2d;
+        }
+        .show_me{
+            display: flex;
+            align-items: center;
+            p{
+                color: #0d1e2d;
+                font-family: 'Martel', serif;
+                font-size: 14px;
+                font-weight: 900;
+                margin-right: 14px;
+            }
+            a{
+                font-family: 'Martel', serif;
+                font-size: 16px;
+                line-height: 18px;
+                font-weight: 700;
+                color: #0d1e2d;
+                padding: 11px 61px 12px 22px;
+                background-color: #fff;
+                z-index: 256;
+                position: relative;
+                &::after{
+                    content: " ";
+                    position: absolute;
+                    width: 25px;
+                    height: 19px;
+                    background-image: url(../images/buterbrod.png);
+                    top: 9px;
+                    right: 20px;
+                }
+            }
+        }
+        
+    }
+
+    
+}
+.price{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 75px;
+}
+.burger_inners{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.burger_title{
+    font-family: 'Rubik', sans-serif;
+    font-size: 23px;
+    font-weight: 700;
+    color: #f39c22;
+    margin: 22px 0 16px;
+}
+.burger_items{
+    font-family: 'Martel', serif;
+    font-size: 12px;
+    line-height: 16px;
+    color: #0b1d2c;
+    margin-bottom: 11px;
+}
+
+h1{
+    color: red;
+    font-size: 75px;
+}
